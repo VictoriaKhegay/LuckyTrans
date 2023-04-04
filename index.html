@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.js">
+    <title>Lucky Truck</title>
+</head>
+<body>
+  <header>
+    <section class="header">
+      <div class="container">
+        <div class="header-info">
+          <div class="header-info__logo">
+            <img src="./img/logo.jpg" alt="">
+          </div>
+          <div class="header-info__menu">
+            <ul>
+              <li><a href="">Главная</a></li>
+              <li><a href="">О компании</a></li>
+              <li><a href="">Наши услуги</a></li>
+              <li><a href="">Клиентам</a></li>
+              <li><a href="">Контакты</a></li>
+              <li><a href="">Вакансии</a></li>
+            </ul>
+          </div>
+
+          <div class="header-info__button">
+            <button>Запрос на перевозку</button>
+          </div>
+
+          <div class="header-info__contacts">
+            <div class="tel">
+              <img src="./img/phone.svg" alt="">
+                <a href="tel:+78008088000">8 800 808-80-00</a>
+            </div>
+            
+            <div class="tel">
+              <img src="./img/phone.svg" alt="">
+                <a href="tel:+78008088000">8 800 808-80-00</a>
+            </div>
+                        
+            <div class="email">
+              <img src="./img/mail.svg" alt="">
+              <a href="mailto:info@trans.kz">info@trans.kz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+    
+<section class="slider">
+  <div class="css-slider-wrapper">
+    <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+    <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+    <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+    <!-- <input type="radio" name="slider" class="slide-radio4" id="slider_4"> -->
+        
+    <div class="slider-pagination">
+      <label for="slider_1" class="page1"></label>
+      <label for="slider_2" class="page2"></label>
+      <label for="slider_3" class="page3"></label>
+      <!-- <label for="slider_4" class="page4"></label> -->
+    </div>
+
+<!-- ЗДЕСЬ ВНУТРИ LABEL ПОЛОЖИШЬ НУЖНЫЕ ТЕБЕ СТРЕЛКИ -->
+
+    <div class="next control">
+      <label for="slider_1" class="numb1">&gt;</label>
+      <label for="slider_2" class="numb2">&gt;</label>
+      <label for="slider_3" class="numb3">&gt;</label>
+      <!-- <label for="slider_4" class="numb4">&gt;</label> -->
+    </div>
+
+    <div class="previous control">
+      <label for="slider_1" class="numb1">&lt;</label>
+      <label for="slider_2" class="numb2">&lt;</label>
+      <label for="slider_3" class="numb3">&lt;</label>
+      <!-- <label for="slider_4" class="numb4">&lt;</label> -->
+    </div>
+      
+<!-- ЗДЕСЬ ВНУТРИ LABEL ПОЛОЖИШЬ НУЖНЫЕ ТЕБЕ СТРЕЛКИ --> 
+      
+    <div class="slider slide1">
+      <div class="container">
+        <div>
+          <h2>Услуги по оплате <br> Железнодорожных тарифов</h2>
+            <div class="button-one">
+              <a class="a-button-one" href="#win2" >заказать звонок</a>
+              <a href="#x" class="overlay" id="win2"></a>
+                  <div class="popup">
+                    <div class="popup-form-one">
+                      <form
+                        role="form"
+                        action="/requestFine"
+                        autocomplete="off"
+                        method="POST"
+                      >
+                        <h4 class="popup-title-one">Заказать звонок</h4>
+                        <p class="popup-descr-one">И мы свяжемся с вами в течении 15 минут</p>
+                        <div class="input-one">
+                        <input class="popup-input-one" type="text" placeholder="Ваше имя" />
+                        <input class="popup-input-one" type="tel" placeholder="+7 (___) ___-__-__" />
+                      </div>
+                        <button class="popup-save-one">ОТПРАВИТЬ</button>
+                      </form>
+                    </div>
+
+                  <a class="close" title="Закрыть" href="#close"></a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider slide2">
+        <div class="container">
+        <div>
+          <h2>Сопровождаем железнодорожные <br> грузоперевозки</h2>
+           <a class="a-button-two" href="#win3">написать сообщение</a>
+            <a href="#x" class="overlay-two" id="win3"></a>
+              <div class="popup">
+                <div class="popup-form-two">
+                  <form
+                    role="form"
+                    action="/requestFine"
+                    autocomplete="off"
+                    method="POST"
+                  >
+                    <h4 class="popup-title-two">написать сообщение</h4>
+                    <p class="popup-descr-two">И мы свяжемся с вами в течении 15 минут</p>
+                    <div class="input-two">
+                    <input class="popup-input-two" type="text" placeholder="Ваше имя" />
+                    <input class="popup-input-two" type="tel" placeholder="+7 (___) ___-__-__" />
+                    <input class="popup-input-two" type="email" type="email" placeholder="E-mail">
+                    <input class="comment-two" type="text" placeholder="Ваш комментарий">
+                  </div>
+                    <button class="popup-save-one">ОТПРАВИТЬ</button>
+                  </form>
+                </div>
+           <a class="close" title="Закрыть" href="#close"></a>
+         </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="slider slide3">
+        <div class="container">
+        <div>
+          <h2>узнай стоимость железнодорожных <br> грузоперевозок</h2>
+          <a class="a-button-three" href="#win4">расcчитать тариф</a>
+            <a href="#x" class="overlay-three" id="win4"></a>
+        <div class="popup-three">
+          <div class="popup-form-three">
+            <form
+              role="form"
+              action="/requestFine"
+              autocomplete="off"
+              method="POST"
+            >
+              <h4 class="popup-title-three">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ, И МЫ РАССЧИТАЕМ СТОИМОСТЬ ГРУЗОПЕРЕВОЗКИ</h4>
+                <div class="input-three">
+                  <div class="input-three-first">
+                    <input class="name-company" type="text" required placeholder="Полное имя компании *" />
+                    <select class="from">
+                      <option value="Naples">Откуда (страна) *</option>
+                      <option value="Kazakhstan">Kazakhstan</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Poland">Poland</option>
+                   </select>
+                   <select class="to">
+                    <option value="Naples">Куда (страна) *</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Poland">Poland</option>
+                 </select>
+                    
+                    <input class="from-station" type="text" required placeholder="Станция отправления *" />
+                    <input class="to-station" type="text" required placeholder="Станция назначения *" />
+                  </div>
+
+                  <div class="input-three-second">
+                    <input class="name-person" type="text" required placeholder="Имя\Фамилия *" />
+                    <input class="gtg" type="text" required placeholder="ГНГ и ЕТСНГ груза *" />
+                    <input class="massa" type="text" required placeholder="Вес груза в вагоне *" />
+                    <select class="type">
+                      <option value="Naples">Вид подвижного состава *</option>
+                      <option value="vagon">Крытые вагоны</option>
+                      <option value="vagon">Полувагоны</option>
+                      <option value="vagon">Вагоны-цистерны</option>
+                      <option value="vagon">Платформы</option>
+                      <option value="vagon">Вагоны-кенгуру</option>
+                      <option value="vagon">Вагоны-ледники</option>
+                      <option value="vagon">Рефрижераторные</option>
+                      <option value="vagon">Автомобилевозы</option>
+                   </select>
+                    
+                    <input class="sostav" type="text" required placeholder="Принадлежность подвижного состава *" />
+                  </div>
+
+                  <div class="input-three-third">
+                    <input class="tel" type="tel" placeholder="+7 (___) ___-__-__" />
+                    <input class="email" type="email" required placeholder="E-mail *" />
+                    <input class="commentary" type="text" required placeholder="Комментарий" />
+                  </div>
+
+                  <div class="input-three-last">
+                    <div class="button-last">
+                      <button class="popup-save-one">ОТПРАВИТЬ</button>
+                    </div>
+                    <div class="checkbox">
+                    <p>Виды связи</p>
+                    <input class="phone" type="checkbox" />
+                    <span>Телефон</span>
+                    <input class="email" type="checkbox" />
+                    <span>E-mail</span>
+                    <input class="massanger" type="checkbox" />
+                    <span>Мессенджер</span>
+                  </div>
+                  
+                </div>
+              
+              
+            </form>
+          </div>
+        <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- <div class="slider slide4">
+
+        <div class="container">
+        <div>
+          <h2>css3 slider</h2>
+          <button></button>
+        </div>
+      </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section class="know-wripper">
+    <div class="container">
+    <div class="know">
+      <h3 class="main-title">
+        Необходимо быстро оплатить железнодорожный тариф
+      </h3>
+      <p class="title">
+        Без переплаты за покупку валюты и обеспечить беспрепятственный проезд
+        подвижного состава?
+      </p>
+      <p class="descr">
+        За 17 лет работы с нашими клиентами и партнерами мы готовы взять на себя
+        расчет и оплату тарифов, а также остальных возможных сборов за ваши
+        вагоны. Сэкономим ваше бесценное время!
+      </p>
+      <hr />
+    </div>
+  </div>
+  </section>
+
+  <section class="services">
+    <div class="container-grid">
+    <div class="leftside">
+      <h3 class="leftside__main-title">Наши услуги</h3>
+      <p class="leftside__title">Работаем для вас с 2014 года</p>
+      <p class="leftside__descr">
+        За 17 лет работы с нашими клиентами и партнерами мы готовы взять на себя
+        расчет и оплату тарифов, а также остальных возможных сборов за ваши
+        вагоны. Сэкономим ваше бесценное время!
+        <br />
+        <br />
+        Создает сильную команду единомышленников с единой корпоративной
+        культурой. Постоянное развитие и совершенствование, командный дух,
+        инновационность, инициативность и проактивность – фундаментальные
+        элементы корпоративной культуры компании.
+      </p>
+    </div>
+    <div class="rightside">
+      <div class="rightside-redsquare">
+        <div class="rightside-img">
+          <div class="shadow">
+            <div class="train">
+              <img src="/img/train.svg" alt="" />
+            </div>
+            <p class="rightside-title">
+              Оплата железнодорожного тарифа по территориям
+            </p>
+            <div class="rightside-button">
+              <a class="button button-blue" href="#win1">Заказать услугу</a>
+
+              <a href="#x" class="overlay" id="win1"></a>
+              <div class="popup">
+                <div class="popup-form">
+                  <form
+                    role="form"
+                    action="/requestFine"
+                    autocomplete="off"
+                    method="POST"
+                  >
+                    <h4 class="popup-title">Заказать звонок</h4>
+                    <p>И мы свяжемся с вами в течении 15 минут</p>
+                    <input id="inputText" type="text" placeholder="Ваше имя" />
+                    <input id="inputText" type="tel" placeholder="+7 (___) ___-__-__" />
+
+                    <button class="popup-save">ОТПРАВИТЬ</button>
+                  </form>
+                </div>
+                <a class="close" title="Закрыть" href="#close"></a>
+              </div>
+
+              <img class="arrow" src="/img/arrowRight.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="advant">
+    <div class="container">
+      <div class="advantages">
+        <div class="advantages-title">
+          <h4>Преимущества работы с нами</h4>
+        </div>
+      <div class="advantages-item">
+        <div class="item1">
+          <div class="advantages_image">
+            <img src="/img/strahovanie.svg" alt="">
+          </div>
+          <div class="advantages__subtitle">
+            <h4 class="advantages__name">
+              Страхование груза
+            </h4>
+            <p class="advantages__description">
+              Создает сильную команду единомышленников с единой корпоративной культурой. Постоянное развитие и совершенствование, командный дух, инновационность, инициативность и проактивность – фундаментальные элементы корпоративной культуры компании
+            </p>
+          </div>
+        </div>
+
+        <div class="item2">
+          <div class="advantages_image">
+            <img src="/img/dostupnye.svg" alt="">
+          </div>
+          <div class="advantages__subtitle">
+            <h4 class="advantages__name">
+              Доступные цены
+            </h4>
+            <p class="advantages__description">
+              Создает сильную команду единомышленников с единой корпоративной культурой. Постоянное развитие и совершенствование, командный дух, инновационность, инициативность и проактивность – фундаментальные элементы корпоративной культуры компании
+            </p>
+          </div>
+        </div>
+
+        <div class="item3">
+          <div class="advantages_image">
+            <img src="/img/uslugi.svg" alt="">
+          </div>
+          <div class="advantages__subtitle">
+            <h4 class="advantages__name">
+              Высокий класс логистических услуг
+            </h4>
+            <p class="advantages__description">
+              Создает сильную команду единомышленников с единой корпоративной культурой. Постоянное развитие и совершенствование, командный дух, инновационность, инициативность и проактивность – фундаментальные элементы корпоративной культуры компании
+            </p>
+          </div>
+        </div>
+
+        <div class="item4">
+          <div class="advantages_image">
+            <img src="/img/person1.svg" alt="">
+          </div>
+          <div class="advantages__subtitle">
+            <h4 class="advantages__name">
+              Индивидуальный подход
+            </h4>
+            <p class="advantages__description">
+              Создает сильную команду единомышленников с единой корпоративной культурой. Постоянное развитие и совершенствование, командный дух, инновационность, инициативность и проактивность – фундаментальные элементы корпоративной культуры компании
+            </p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    <hr />
+  </div>
+  </section>
+
+  <section class="scheme-section">
+    <div class="container">
+      <div class="scheme">
+        <div class="scheme_title">
+          <h4>сХЕМА СОТРУДНИЧЕСТВА С НАМИ</h4>
+        </div>
+        <div class="scheme_descr">
+          <p>
+            Создает сильную команду единомышленников с единой корпоративной
+            культурой. Постоянное развитие и совершенствование, командный дух,
+            инновационность, инициативность и проактивность – фундаментальные
+            элементы корпоративной культуры компании.
+          </p>
+        </div>
+    
+        <div class="schreme-image">
+          <div class="first">
+            <div class="one">
+              <div class="img1">
+                <img src="img/img1.svg" alt="" />
+                <p class="schreme-p">Позвоните или отправьте заявку</p>
+              </div>
+              <hr class="hr1" />
+              <div class="circle1">
+                <img src="img/right.svg" alt="" />
+              </div>
+            </div>
+      
+            <div class="two">
+              <div class="img2">
+                <img src="img/img2.svg" alt="" />
+                <p class="schreme-p">Согласование стоимости перевозки</p>
+              </div>
+              <hr class="hr2" />
+              <div class="circle2">
+                <img src="img/right.svg" alt="" />
+              </div>
+            </div>
+      
+            <div class="three">
+              <div class="img3">
+                <img src="img/img3.svg" alt="" />
+                <p class="schreme-p">Заключение договора</p>
+              </div>
+              <div class="hr3" />
+              <div class="circle3">
+                <img src="img/right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+      </div>
+          <div class="second">
+            <div class="four">
+              <div class="img4">
+                <img src="img/img4.svg" alt="" />
+                <p class="schreme-p">Оплата счета</p>
+              </div>
+              <div class="hr4" />
+              <div class="circle4">
+                <img src="img/right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+      </div>
+          <div class="third">
+            <div class="five">
+              <div class="img5">
+                <img src="img/img7.svg" alt="" />
+                <p class="schreme-p">Формирование бухгалтерских документов</p>
+                <hr class="hr5" />
+                <div class="circle5">
+                  <img src="img/right.svg" alt="" />
+                </div>
+              </div>
+            </div>
+      
+            <div class="six">
+              <div class="img6">
+                <img src="img/img6.svg" alt="" />
+                <p class="schreme-p">Предоставление СМГС накладной</p>
+              </div>
+              <hr class="hr6" />
+              <div class="circle6">
+                <img src="img/right.svg" alt="" />
+              </div>
+            </div>
+      
+            <div class="seven">
+              <div class="img7">
+                <img src="img/img5.svg" alt="" />
+                <p class="schreme-p">Выдача проплатных кодов, телеграмм</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+<section class="applay">
+  <div class="application">
+    <div class="container">
+      <div class="application-form">
+        <h4 class="application-title">оставьте заявку</h4>
+        <input class="application-input" id="textInput" type="text" placeholder="Ваше имя" />
+        <input class="application-input" id="textInput" type="tel" placeholder="+7 (___) ___-__-__" />
+
+        <button class="save">проконсультироваться</button>
+      </div>
+      </div>
+      </div>
+
+</section>
+
+<footer>
+  <div class="container">
+    <div class="header-info">
+      <div class="header-info__logo">
+        <img src="/img/logo.jpg" alt="" />
+      </div>
+
+      <div class="header-info__menu">
+        <ul>
+          <li><a href="">Главная</a></li>
+          <li><a href="">О компании</a></li>
+          <li><a href="">Наши услуги</a></li>
+          <li><a href="">Клиентам</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Вакансии</a></li>
+        </ul>
+      </div>
+
+      <div class="header-social">
+        <a href="https://www.whatsapp.com/?lang=ru"
+          ><img src="/img/whatsApp.svg" alt=""
+        /></a>
+        <a href="https://www.skype.com/ru/"
+          ><img src="/img/skype.svg" alt=""
+        /></a>
+      </div>
+
+      <div class="header-info__contacts">
+        <div class="tel">
+          <img src="/img/phone.svg" alt="" />
+          <a href="tel:+78008088000">8 800 808-80-00</a>
+        </div>
+        <div class="email">
+          <img src="/img/mail.svg" alt="" />
+          <a href="mailto:info@trans.kz">info@trans.kz</a>
+        </div>
+      </div>
+    </div>
+    <hr class="hr-footer" />
+    <div class="info">
+      <p>Все права защищены. © 2006-2020</p>
+      <p>
+        Разработано
+        <a href="https://github.com/VictoriaKhegay/">Khegay Victoria</a>
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@import "colors.scss";
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-center {
+    @include flex-between();
+    align-items: center;
+}
+
+@mixin after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+@mixin bg-default {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin button-default {
+    background-color: $red-button;
+    color: white;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 7px;
+}
