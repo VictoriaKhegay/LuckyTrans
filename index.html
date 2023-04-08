@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <script src="./index.js"></script>
     <link rel="stylesheet" href="./index.js">
     <title>Lucky Truck</title>
@@ -124,6 +125,7 @@
         <div class="container">
         <div>
           <h2>Сопровождаем железнодорожные <br> грузоперевозки</h2>
+          <div class="button-one">
            <a class="a-button-two" href="#win3">написать сообщение</a>
             <a href="#x" class="overlay-two" id="win3"></a>
               <div class="popup">
@@ -139,7 +141,7 @@
                     <div class="input-two">
                     <input class="popup-input-two" type="text" placeholder="Ваше имя" />
                     <input class="popup-input-two" type="tel" placeholder="+7 (___) ___-__-__" />
-                    <input class="popup-input-two" type="email" type="email" placeholder="E-mail">
+                    <input class="popup-input-two" type="email" placeholder="E-mail">
                     <input class="comment-two" type="text" placeholder="Ваш комментарий">
                   </div>
                     <button class="popup-save-one">ОТПРАВИТЬ</button>
@@ -148,6 +150,7 @@
            <a class="close" title="Закрыть" href="#close"></a>
          </div>
         </div>
+      </div>
         </div>
       </div>
 
@@ -155,6 +158,7 @@
         <div class="container">
         <div>
           <h2>узнай стоимость железнодорожных <br> грузоперевозок</h2>
+          <div class="button-one">
           <a class="a-button-three" href="#win4">расcчитать тариф</a>
             <a href="#x" class="overlay-three" id="win4"></a>
         <div class="popup-three">
@@ -237,6 +241,7 @@
         </div>
       </div>
       </div>
+      </div>
       <!-- <div class="slider slide4">
 
         <div class="container">
@@ -264,7 +269,7 @@
         расчет и оплату тарифов, а также остальных возможных сборов за ваши
         вагоны. Сэкономим ваше бесценное время!
       </p>
-      <hr />
+      <hr class="know-hr"/>
     </div>
   </div>
   </section>
@@ -393,7 +398,7 @@
 
         </div>
       </div>
-    <hr />
+    <hr class="advantages-hr"/>
   </div>
   </section>
 
@@ -441,7 +446,7 @@
                 <img src="img/img3.svg" alt="" />
                 <p class="schreme-p">Заключение договора</p>
               </div>
-              <div class="hr3" />
+              <hr class="hr3" />
               <div class="circle3">
                 <img src="img/right.svg" alt="" />
               </div>
@@ -454,7 +459,7 @@
                 <img src="img/img4.svg" alt="" />
                 <p class="schreme-p">Оплата счета</p>
               </div>
-              <div class="hr4" />
+              <hr class="hr4" />
               <div class="circle4">
                 <img src="img/right.svg" alt="" />
               </div>
@@ -496,9 +501,10 @@
     </div>
     </section>
 
-<section class="applay">
-  <div class="application">
-    <div class="container">
+<section>
+  <div class="applay">
+     <div class="container">
+      <div class="application">
       <div class="application-form">
         <h4 class="application-title">оставьте заявку</h4>
         <input class="application-input" id="textInput" type="text" placeholder="Ваше имя" />
@@ -508,17 +514,19 @@
       </div>
       </div>
       </div>
-
+    </div>
 </section>
 
 <footer>
+  <div>
   <div class="container">
-    <div class="header-info">
-      <div class="header-info__logo">
+    <div class="footer-info">
+      
+      <div class="footer-info__logo">
         <img src="/img/logo.jpg" alt="" />
       </div>
 
-      <div class="header-info__menu">
+      <div class="footer-info__menu">
         <ul>
           <li><a href="">Главная</a></li>
           <li><a href="">О компании</a></li>
@@ -529,7 +537,7 @@
         </ul>
       </div>
 
-      <div class="header-social">
+      <div class="footer-social">
         <a href="https://www.whatsapp.com/?lang=ru"
           ><img src="/img/whatsApp.svg" alt=""
         /></a>
@@ -538,7 +546,7 @@
         /></a>
       </div>
 
-      <div class="header-info__contacts">
+      <div class="footer-info__contacts">
         <div class="tel">
           <img src="/img/phone.svg" alt="" />
           <a href="tel:+78008088000">8 800 808-80-00</a>
@@ -558,6 +566,7 @@
       </p>
     </div>
   </div>
+</div>
 </footer>
 </body>
 </html>
